@@ -1,0 +1,50 @@
+{
+  "name": "rust-textnote",
+  "version": "1.0.0",
+  "description": "Canvas based text note with WebAssembly",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ragingwind/rust-textnote.git"
+  },
+  "author": {
+    "name": "Jimmy Moon",
+    "email": "ragingwind@gmail.com",
+    "url": "https://jimmy.im"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">= 14.0.0"
+  },
+  "napi": {
+    "name": "rust-textnote",
+    "triples": {
+      "defaults": false,
+      "additional": [
+        "aarch64-apple-darwin",
+        "aarch64-unknown-linux-gnu",
+        "aarch64-unknown-linux-musl",
+        "x86_64-unknown-linux-gnu",
+        "x86_64-unknown-linux-musl"
+      ]
+    }
+  },
+  "scripts": {
+    "build:skia": "node ./scripts/build.js",
+    "clean:skia": "node ./scripts/clean.js",
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform",
+    "artifacts": "napi artifacts",
+    "prepublishOnly": "napi prepublish -t npm",
+    "version": "napi version",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "dependencies": {
+    "execa": "^6.1.0"
+  },
+  "devDependencies": {
+    "@napi-rs/cli": "^2.11.4",
+    "vitest": "^0.23.4"
+  }
+}

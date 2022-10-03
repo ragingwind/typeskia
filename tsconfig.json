@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "target": "ES2018",
+    "strict": true,
+    "moduleResolution": "node",
+    "module": "CommonJS",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "outDir": "dist",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "third_party",
+    "target",
+    "npm"
+  ]
+}
