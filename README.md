@@ -7,9 +7,11 @@
 # Intall
 
 ```sh
+// init submodules
 git clone --recurse-submodules https://github.com/ragingwind/rust-textnote.git
 git submodule init
 git submodule update
-```
 
-# project
+// init deps
+pnpm install
+```

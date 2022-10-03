@@ -13,9 +13,6 @@
     "url": "https://jimmy.im"
   },
   "main": "index.js",
-  "engines": {
-    "node": ">= 14.0.0"
-  },
   "napi": {
     "name": "rust-textnote",
     "triples": {
@@ -39,12 +36,18 @@
     "version": "napi version",
     "test": "vitest"
   },
-  "keywords": [],
-  "dependencies": {
-    "execa": "^6.1.0"
-  },
+  "keywords": [
+    "rust",
+    "skia",
+    "typography"
+  ],
   "devDependencies": {
     "@napi-rs/cli": "^2.11.4",
     "vitest": "^0.23.4"
-  }
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
+  },
+  "packageManager": "pnpm@7.5.0"
 }
