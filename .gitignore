@@ -1,0 +1,6 @@
+/target
+/Cargo.lock
+*.node
+third-party/depot_tools
+third-party/skia
+node_modules
