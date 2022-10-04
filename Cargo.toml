@@ -15,4 +15,5 @@ napi = { version = "2.7.0", default-features = false, features = ["napi4"] }
 napi-derive = "2.7.0"
 
 [build-dependencies]
+cc = { version = "1.0", features = ["parallel"] }
 napi-build = "2.0.1"

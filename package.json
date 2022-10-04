@@ -29,8 +29,8 @@
   "scripts": {
     "build:skia": "node ./scripts/build.js",
     "clean:skia": "node ./scripts/clean.js",
-    "build": "napi build --platform --release",
-    "build:debug": "napi build --platform",
+    "build": "napi build --platform --release --js index.js",
+    "build:debug": "napi build --platform --js index.js",
     "artifacts": "napi artifacts",
     "prepublishOnly": "napi prepublish -t npm",
     "version": "napi version",
