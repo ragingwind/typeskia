@@ -4,3 +4,5 @@
 third-party/depot_tools
 third-party/skia
 node_modules
+.build
+.tests
