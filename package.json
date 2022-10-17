@@ -1,11 +1,11 @@
 {
-  "name": "rust-textnote",
+  "name": "typeskia",
   "version": "1.0.0",
   "description": "Canvas based text note with WebAssembly",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ragingwind/rust-textnote.git"
+    "url": "git+https://github.com/ragingwind/typeskia.git"
   },
   "author": {
     "name": "Jimmy Moon",
@@ -14,7 +14,7 @@
   },
   "main": "index.js",
   "napi": {
-    "name": "rust-textnote",
+    "name": "typeskia",
     "triples": {
       "defaults": false,
       "additional": [

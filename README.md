@@ -1,4 +1,4 @@
-# rust-textnote
+# typeskia
 
 > Canvas based text note with WebAssembly. Tested only on macOS
 
@@ -8,7 +8,7 @@
 
 ```sh
 // init submodules
-git clone --recurse-submodules https://github.com/ragingwind/rust-textnote.git
+git clone --recurse-submodules https://github.com/ragingwind/typeskia.git
 git submodule init
 git submodule update
 

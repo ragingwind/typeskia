@@ -1,3 +1,3 @@
-# `rust-textnote-linux-x64-gnu`
+# `typeskia-linux-x64-gnu`
 
-This is the **x86_64-unknown-linux-gnu** binary for `rust-textnote`
+This is the **x86_64-unknown-linux-gnu** binary for `typeskia`

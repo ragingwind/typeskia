@@ -1,5 +1,5 @@
 [package]
-name = "rust-textnote"
+name = "typeskia"
 version = "0.1.0"
 edition = "2021"
 authors = ["Jimmy Moon <ragingwind@gmail.com>"]

@@ -1,5 +1,5 @@
 {
-  "name": "rust-textnote-linux-x64-musl",
+  "name": "typeskia-linux-x64-musl",
   "version": "0.0.0",
   "os": [
     "linux"
@@ -7,9 +7,9 @@
   "cpu": [
     "x64"
   ],
-  "main": "rust-textnote.linux-x64-musl.node",
+  "main": "typeskia.linux-x64-musl.node",
   "files": [
-    "rust-textnote.linux-x64-musl.node"
+    "typeskia.linux-x64-musl.node"
   ],
   "license": "MIT",
   "engines": {

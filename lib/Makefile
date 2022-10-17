@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.23.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ragingwind/Localspace/rust-textnote/lib
+CMAKE_SOURCE_DIR = /Users/ragingwind/Localspace/typeskia/lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ragingwind/Localspace/rust-textnote/lib
+CMAKE_BINARY_DIR = /Users/ragingwind/Localspace/typeskia/lib
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ragingwind/Localspace/rust-textnote/lib/CMakeFiles /Users/ragingwind/Localspace/rust-textnote/lib//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ragingwind/Localspace/typeskia/lib/CMakeFiles /Users/ragingwind/Localspace/typeskia/lib//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ragingwind/Localspace/rust-textnote/lib/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ragingwind/Localspace/typeskia/lib/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,17 @@ typeskia/fast:
 .PHONY : typeskia/fast
 
 #=============================================================================
-# Target rules for targets named test_typeskia
+# Target rules for targets named test
 
 # Build rule for target.
-test_typeskia: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_typeskia
-.PHONY : test_typeskia
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
 # fast build rule for target.
-test_typeskia/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_typeskia.dir/build.make tests/CMakeFiles/test_typeskia.dir/build
-.PHONY : test_typeskia/fast
+test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 # Help Target
 help:
@@ -150,7 +150,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test_typeskia"
+	@echo "... test"
 	@echo "... typeskia"
 .PHONY : help
 

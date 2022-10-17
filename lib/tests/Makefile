@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.23.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ragingwind/Localspace/rust-textnote/lib
+CMAKE_SOURCE_DIR = /Users/ragingwind/Localspace/typeskia/lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ragingwind/Localspace/rust-textnote/lib
+CMAKE_BINARY_DIR = /Users/ragingwind/Localspace/typeskia/lib
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ragingwind/Localspace/rust-textnote/lib/CMakeFiles /Users/ragingwind/Localspace/rust-textnote/lib/tests//CMakeFiles/progress.marks
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ragingwind/Localspace/rust-textnote/lib/CMakeFiles 0
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ragingwind/Localspace/typeskia/lib/CMakeFiles /Users/ragingwind/Localspace/typeskia/lib/tests//CMakeFiles/progress.marks
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ragingwind/Localspace/typeskia/lib/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,39 +103,39 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/test_typeskia.dir/rule:
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_typeskia.dir/rule
-.PHONY : tests/CMakeFiles/test_typeskia.dir/rule
+tests/CMakeFiles/test.dir/rule:
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test.dir/rule
+.PHONY : tests/CMakeFiles/test.dir/rule
 
 # Convenience name for target.
-test_typeskia: tests/CMakeFiles/test_typeskia.dir/rule
-.PHONY : test_typeskia
+test: tests/CMakeFiles/test.dir/rule
+.PHONY : test
 
 # fast build rule for target.
-test_typeskia/fast:
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_typeskia.dir/build.make tests/CMakeFiles/test_typeskia.dir/build
-.PHONY : test_typeskia/fast
+test/fast:
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_typeskia.dir/build.make tests/CMakeFiles/test_typeskia.dir/main.cpp.o
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -143,7 +143,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_typeskia.dir/build.make tests/CMakeFiles/test_typeskia.dir/main.cpp.i
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -151,7 +151,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_typeskia.dir/build.make tests/CMakeFiles/test_typeskia.dir/main.cpp.s
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 tests.o: tests.cpp.o
@@ -159,7 +159,7 @@ tests.o: tests.cpp.o
 
 # target to build an object file
 tests.cpp.o:
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_typeskia.dir/build.make tests/CMakeFiles/test_typeskia.dir/tests.cpp.o
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/tests.cpp.o
 .PHONY : tests.cpp.o
 
 tests.i: tests.cpp.i
@@ -167,7 +167,7 @@ tests.i: tests.cpp.i
 
 # target to preprocess a source file
 tests.cpp.i:
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_typeskia.dir/build.make tests/CMakeFiles/test_typeskia.dir/tests.cpp.i
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/tests.cpp.i
 .PHONY : tests.cpp.i
 
 tests.s: tests.cpp.s
@@ -175,7 +175,7 @@ tests.s: tests.cpp.s
 
 # target to generate assembly for a file
 tests.cpp.s:
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_typeskia.dir/build.make tests/CMakeFiles/test_typeskia.dir/tests.cpp.s
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/tests.cpp.s
 .PHONY : tests.cpp.s
 
 # Help Target
@@ -186,7 +186,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test_typeskia"
+	@echo "... test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/ragingwind/Localspace/rust-textnote/lib && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/ragingwind/Localspace/typeskia/lib && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
